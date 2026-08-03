@@ -4,10 +4,11 @@ import (
 	"gorm.io/gorm"
 )
 
+
 type Car struct {
 	gorm.Model
-	LicensePlate  string `json:"license_plate"`
-	Province      string `json:"province" gorm:"unique"`
+	LicensePlate  string `json:"license_plate" gorm:"unique"`
+	Province      string `json:"province"`
 	Brand         string `json:"brand" `
 	CarModel      string `json:"car_model"`
 	SubModel      string `json:"sub_model"`

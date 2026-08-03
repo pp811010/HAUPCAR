@@ -1,7 +1,9 @@
 package main
 
 import (
+	"haupcar/controllers"
 	"haupcar/initializers"
+
 	"github.com/gin-gonic/gin"
 )
 
@@ -14,11 +16,11 @@ func main() {
 
   api := router.Group("/api") 
   {
-	api.POST("/cars", func(c *gin.Context) {
-		c.JSON(200, gin.H{
-			"message": "pong",
-		})
-	})
+	api.POST("/car", controllers.CreateCar)
+	api.GET("/cars", controllers.GetAllCars)
+	api.GET("/car/:id", controllers.GetCarByID)
+	api.PUT("/car/:id", controllers.UpdateCar)
+	api.DELETE("/car/:id", controllers.DeleteCar)
   }
 
   router.Run() 
