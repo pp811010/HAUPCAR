@@ -1,5 +1,9 @@
 # 🚗 HAUPCAR - Car Management System
 
+<img width="1918" height="917" alt="image" src="https://github.com/user-attachments/assets/bc884f49-62e1-4760-81c2-ba28d0890e73" />
+
+
+
 ระบบจัดการข้อมูลรถยนต์ (CRUD) พัฒนาด้วย React (Vite) และ Go (Gin) + SQLite
 
 ---
