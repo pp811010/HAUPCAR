@@ -3,6 +3,7 @@ package main
 import (
 	"haupcar/controllers"
 	"haupcar/initializers"
+	"haupcar/middleware"
 
 	"github.com/gin-gonic/gin"
 )
@@ -13,6 +14,7 @@ func init() {
 
 func main() {
   router := gin.Default()
+  router.Use(middleware.CORSMiddleware())
 
   api := router.Group("/api") 
   {

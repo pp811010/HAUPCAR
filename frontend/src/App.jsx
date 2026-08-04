@@ -1,17 +1,24 @@
 import Layout from './components/Layout.jsx'
 import './index.css'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import CarPage from './pages/CarPage.jsx'
+import 'react-toastify/dist/ReactToastify.css'
+import CarPage from './pages/carpages/CarPage.jsx'
+import { createBrowserRouter, RouterProvider } from "react-router-dom"
+
+const router = createBrowserRouter([
+  {
+    element: <Layout/>,
+    children: [
+      {
+        path: "/",
+        element: <CarPage/>,
+      },
+    ],
+  },
+])
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route element={<Layout/>}>
-          <Route path='/' element={<CarPage/>}/>
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <RouterProvider router={router} />
   )
 }
 export default App
