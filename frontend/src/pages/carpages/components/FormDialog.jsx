@@ -226,7 +226,6 @@ export function CarFormDialog({ open, onOpenChange, mode = 'create', initialData
                                             id="form-car_model"
                                             aria-invalid={fieldState.invalid}
                                             placeholder="Yaris"
-                                            autoComplete="off"
                                             disabled={isView}
 
                                         />
@@ -252,7 +251,6 @@ export function CarFormDialog({ open, onOpenChange, mode = 'create', initialData
                                             id="form-year"
                                             aria-invalid={fieldState.invalid}
                                             placeholder="2024"
-                                            autoComplete="off"
                                             disabled={isView}
 
                                         />
@@ -275,7 +273,6 @@ export function CarFormDialog({ open, onOpenChange, mode = 'create', initialData
                                             id="form-color"
                                             aria-invalid={fieldState.invalid}
                                             placeholder="ขาว"
-                                            autoComplete="off"
                                             disabled={isView}
 
                                         />
@@ -334,7 +331,6 @@ export function CarFormDialog({ open, onOpenChange, mode = 'create', initialData
                                             id="form-chassis_number"
                                             aria-invalid={fieldState.invalid}
                                             placeholder="M5dsagaf34345"
-                                            autoComplete="off"
                                             disabled={isView}
                                         />
                                         {fieldState.invalid && (
@@ -356,7 +352,6 @@ export function CarFormDialog({ open, onOpenChange, mode = 'create', initialData
                                             id="form-engine_number"
                                             aria-invalid={fieldState.invalid}
                                             placeholder="1TRF3456"
-                                            autoComplete="off"
                                             disabled={isView}
                                         />
                                         {fieldState.invalid && (
@@ -410,7 +405,6 @@ export function CarFormDialog({ open, onOpenChange, mode = 'create', initialData
                                         id="form-remark"
                                         aria-invalid={fieldState.invalid}
                                         placeholder="หมายเหตุ"
-                                        autoComplete="off"
                                         disabled={isView}
                                     />
                                     {fieldState.invalid && (
